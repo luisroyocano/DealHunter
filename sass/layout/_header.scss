@@ -1,0 +1,45 @@
+.header {
+    height: 20vh; // 95% viewport height 
+    background-size: cover;
+    background-position: top; // ensure image always stays at the top of the page 
+    position: relative;
+    background-color: $color-grey-light-1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 6rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        display: inline-block;
+        top: 8rem;
+        left: 50%;
+        transform: translate(-50%, -50%); // relative to itself 
+        text-align: center; // main button is a text element. This solution is easier than using text-transform 
+    }
+    &__search-box{
+        width: 100rem;
+        height:50px;
+        border-radius: 100px;
+        background-color: $color-primary;
+        border: none;
+        padding: 8px 16px;
+        color: white;
+        outline:0; 
+        font-size: 1.5rem;
+        &::placeholder {
+            color: white;
+            font-size: 1.5rem;
+        }
+    
+    }
+}

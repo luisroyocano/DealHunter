@@ -1,0 +1,26 @@
+.product{
+    background-color: $color-white;
+    border-radius: 15px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    padding: 6rem;
+    text-align: center;
+
+   
+    &__img-car{
+        width: 80%;
+        height: 27rem;
+        border-radius: 5px;
+        transition: all 0.3s;
+        &:hover {
+            transform:  scale(1.05);
+
+            }        
+    }
+    &__text{
+        color: $color-primary;
+        font-size: 1.5rem;
+    }
+}
