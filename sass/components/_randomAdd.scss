@@ -16,9 +16,11 @@
         transform: translateY(-1.5rem) scale(1.03);
     }
 
-    &-ventas{
+    &--ventas{
         width: 23rem;
         background-color:$color-white;
+        float:left;
+        margin-right: 2.5rem;
     }
 
 }

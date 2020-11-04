@@ -15,11 +15,11 @@
         transform: translateX(-2rem);;
     }
     &__text{
-        color: $color-primary;
+        
         font-size: 1.5rem;
-        &:link{
-            color: $color-primary;
-        }
+       &-link{
+           color: $color-primary;
+       }
     }
 }
 

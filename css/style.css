@@ -205,9 +205,11 @@ body {
     height: 12rem; }
   .randomAdd:hover {
     transform: translateY(-1.5rem) scale(1.03); }
-  .randomAdd-ventas {
+  .randomAdd--ventas {
     width: 23rem;
-    background-color: #fff; }
+    background-color: #fff;
+    float: left;
+    margin-right: 2.5rem; }
 
 .search-box {
   width: 100rem;
@@ -268,9 +270,8 @@ body {
     height: 100%;
     transform: translateX(-2rem); }
   .usuario__text {
-    color: #4480C7;
     font-size: 1.5rem; }
-    .usuario__text:link {
+    .usuario__text-link {
       color: #4480C7; }
 
 .contenedor {
@@ -283,13 +284,44 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out; }
 
-.comentario__usuario {
-  float: left; }
-
-.comentario__text {
+.comentario {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
   font-size: 1.6rem;
-  float: left;
-  vertical-align: center; }
+  background-color: rgba(255, 255, 255, 0.6); }
+  .comentario__shape {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem); }
+  .comentario__img {
+    height: 100%;
+    transform: translateX(-4rem);
+    transition: all 0.5s; }
+  .comentario__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0; }
+  .comentario:hover .comentario__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .comentario:hover .comentario__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%); }
 
 .row {
   max-width: 114rem;
