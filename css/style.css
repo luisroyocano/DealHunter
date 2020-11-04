@@ -257,7 +257,6 @@ body {
   font-size: 1.5rem; }
 
 .usuario {
-  display: inline-block;
   text-align: center; }
   .usuario__shape {
     position: relative;
@@ -406,12 +405,14 @@ body {
 
 .section-product {
   background-color: #f7f7f7;
+  height: 80vh;
   padding: 3rem;
   text-align: center; }
 
 .section-perfil-header {
   background-color: #f7f7f7;
-  padding: 3rem; }
+  padding: 3rem;
+  text-align: center; }
 
 .section-perfil-ventas {
   background-color: #f7f7f7;
