@@ -1,0 +1,11 @@
+.comentario{
+   &__usuario{
+       float: left;
+   }
+
+    &__text{
+        font-size: 1.6rem;
+        float: left;
+        vertical-align: center;
+    }
+}

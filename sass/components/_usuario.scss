@@ -1,0 +1,27 @@
+.usuario{
+    display: inline-block;
+    text-align: center;
+    &__shape {
+        position: relative;
+        width: 8rem;
+        height: 8rem;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        display: inline-block;
+
+    }
+    &__img-profile{
+        height: 100%;
+        transform: translateX(-2rem);;
+    }
+    &__text{
+        color: $color-primary;
+        font-size: 1.5rem;
+        &:link{
+            color: $color-primary;
+        }
+    }
+}
+
+    
+

@@ -243,43 +243,53 @@ body {
       -webkit-background-clip: text;
       color: transparent; }
 
-.product {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
-  animation-name: moveInRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  padding: 6rem;
+.product__img-car {
+  width: 80%;
+  height: 27rem;
+  border-radius: 5px;
+  transition: all 0.3s; }
+  .product__img-car:hover {
+    transform: scale(1.05); }
+
+.product__text {
+  font-size: 1.5rem; }
+
+.usuario {
+  display: inline-block;
   text-align: center; }
-  .product__img-car {
-    width: 80%;
-    height: 27rem;
-    border-radius: 5px;
-    transition: all 0.3s; }
-    .product__img-car:hover {
-      transform: scale(1.05); }
-  .product__text {
+  .usuario__shape {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    display: inline-block; }
+  .usuario__img-profile {
+    height: 100%;
+    transform: translateX(-2rem); }
+  .usuario__text {
     color: #4480C7;
     font-size: 1.5rem; }
+    .usuario__text:link {
+      color: #4480C7; }
 
-.shape {
-  width: 8rem;
-  height: 8rem;
-  shape-outside: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%); }
-
-.img-profile {
-  height: 100%;
-  width: 100%;
-  float: center; }
-
-.ventas {
+.contenedor {
   background-color: #fff;
   border-radius: 15px;
-  width: 70%;
+  width: 95%;
   display: inline-block;
-  padding: 6rem; }
+  padding: 6rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+.comentario__usuario {
+  float: left; }
+
+.comentario__text {
+  font-size: 1.6rem;
+  float: left;
+  vertical-align: center; }
 
 .row {
   max-width: 114rem;
@@ -364,15 +374,19 @@ body {
 
 .section-product {
   background-color: #f7f7f7;
-  padding: 6rem; }
+  padding: 3rem;
+  text-align: center; }
 
 .section-perfil-header {
   background-color: #f7f7f7;
-  padding: 6rem; }
+  padding: 3rem; }
 
 .section-perfil-ventas {
   background-color: #f7f7f7;
-  padding: 6rem;
+  text-align: center; }
+
+.section-perfil-valoraciones {
+  background-color: #f7f7f7;
   text-align: center; }
 
 .section-piepag {

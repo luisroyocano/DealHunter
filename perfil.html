@@ -25,15 +25,17 @@
             <input class="header__search-box" type="text" placeholder="Search.." >
         </div>
     </header>
-    <section class="section-perfil-header">
+    <section class="section-perfil-header ">
         <div class="row">
             <div class="col-1-of-3">
-                <figure class="shape">
-                    <img src="img/perfil.jpg" alt="Person on a tour" class="img-profile">
-                </figure>
-                <p class="product__text u-margin-bottom-small">
-                    Usuario: Juanpe27
-                </p>
+                <div class="usuario">
+                    <figure class="usuario__shape">
+                        <img src="img/perfil2.jpg" alt="Person on a tour" class="usuario__img-profile">
+                    </figure>
+                    <p class="usuario__text u-margin-bottom-small">
+                        <a href="perfil.html">Usuario: Juanpe27</a>
+                    </p>
+                </div>
             </div>
             <div class="col-1-of-3">
                 <a href="#ventas" class="btn btn--white btn--animated ">Ventas</a>
@@ -44,7 +46,7 @@
         </div>    
     </section>
     <section id="ventas" class="section-perfil-ventas">
-        <div class="ventas u-margin-bottom-big">
+        <div class="contenedor u-margin-bottom-big">
             <h3 class="heading-tertiary u-margin-bottom-small">
                 Ventas:
             </h3>
@@ -61,13 +63,23 @@
         </div>
     </section>
     <section id="valoraciones" class="section-perfil-ventas">
-        <div class="ventas u-margin-bottom-big">
+        <div class="contenedor u-margin-bottom-big">
             <h3 class="heading-tertiary u-margin-bottom-small">
                 Valoraciones:
             </h3>
-            <p class="feature-box__text u-margin-bottom-small">
-                Pedro33: Trato serio y formal.
-            </p>
+            <div class="comentario">
+                <div class="usuario comentario__usuario">
+                    <figure class="usuario__shape">
+                        <img src="img/perfil.jpg" alt="Person on a tour" class="usuario__img-profile">
+                    </figure>
+                    <p class="usuario__text u-margin-bottom-small">
+                        <a href="perfil.html">Usuario: Ana1994</a>
+                    </p>
+                </div>
+                <p class="comentario__text u-margin-bottom-small">
+                     Trato serio y formal.
+                </p>
+            </div>
         </div>
     </section>
     </section>    
