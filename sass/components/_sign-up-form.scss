@@ -1,0 +1,55 @@
+.form{
+    background-color: white;
+    border-radius: 15px;
+    padding: 4rem;
+   
+    &__text{
+        font-size: 2rem;
+        
+    }
+    &__grupo{
+        animation-name: appear;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+        
+        &--box{
+            width:40rem;
+            border-bottom:solid 1px $color-primary;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: solid 2px $color-primary;
+            font-size: 1.5rem;
+            padding: 1rem;
+            color: $color-primary;
+            transition: all 0.2s;
+            outline:0; 
+            &::placeholder{
+                color: $color-primary;
+            }
+
+            &:hover{
+                transform: scale(1.05);
+            }
+            
+        }
+        &--btn{
+            width:40rem;
+            font-size: 1.5rem;
+            outline:0;
+            padding: 1rem;
+            border:none;
+            background-color: $color-primary;
+            border-radius: 15px;
+            color: $color-white;
+            transition: all 0.2s;
+            &::placeholder{
+                color: $color-white;
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
