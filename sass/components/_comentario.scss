@@ -4,9 +4,11 @@
     box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
     border-radius: 3px;
     padding: 6rem;
+    margin-bottom: 3rem;
     padding-left: 9rem;
     font-size: $default-font-size;
     background-color: rgba($color-white, 0.6);
+    
     &__shape {
         position: relative;
         width: 8rem;
@@ -21,7 +23,6 @@
         transform: translateX(-4rem) ;
         transition: all 0.5s;
     }
-   
     &__caption {
         position: absolute;
         top: 50%;

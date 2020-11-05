@@ -1,6 +1,9 @@
 .usuario{
-   
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
     text-align: center;
+    
     &__shape {
         position: relative;
         width: 8rem;
