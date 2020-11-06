@@ -1,5 +1,5 @@
 .form{
-    background-color: white;
+    background-color: $color-white;
     border-radius: 15px;
     padding: 4rem;
    
@@ -31,6 +31,17 @@
 
             &:hover{
                 transform: scale(1.05);
+                box-shadow: 0 1.5rem 4rem rgba($color-black, .1);
+            }
+            &:focus{
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: solid 2px #55c57a;
+                color: #55c57a;
+                &::placeholder{
+                    color:  #55c57a;
+                }
             }
             
         }
@@ -49,6 +60,8 @@
             }
             &:hover{
                 transform: scale(1.05);
+                background-color: #55c57a;
+                box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
             }
         }
     }

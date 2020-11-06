@@ -336,7 +336,7 @@ body {
     filter: blur(3px) brightness(80%); }
 
 .form {
-  background-color: white;
+  background-color: #fff;
   border-radius: 15px;
   padding: 4rem; }
   .form__text {
@@ -360,7 +360,16 @@ body {
       .form__grupo--box::placeholder {
         color: #4480C7; }
       .form__grupo--box:hover {
-        transform: scale(1.05); }
+        transform: scale(1.05);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); }
+      .form__grupo--box:focus {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: solid 2px #55c57a;
+        color: #55c57a; }
+        .form__grupo--box:focus::placeholder {
+          color: #55c57a; }
     .form__grupo--btn {
       width: 40rem;
       font-size: 1.5rem;
@@ -374,7 +383,9 @@ body {
       .form__grupo--btn::placeholder {
         color: #fff; }
       .form__grupo--btn:hover {
-        transform: scale(1.05); }
+        transform: scale(1.05);
+        background-color: #55c57a;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
 
 .row {
   max-width: 114rem;
