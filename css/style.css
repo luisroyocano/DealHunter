@@ -446,9 +446,10 @@ body {
     float: right;
     position: absolute;
     text-align: center;
-    top: 4rem;
-    right: 4rem;
-    transition: all 0.2s; }
+    top: 3rem;
+    right: 3rem;
+    transition: all 0.2s;
+    margin: 1rem; }
     .header__menu:hover .header__menu--elementos {
       opacity: 1;
       background-color: #4480C7;
@@ -456,15 +457,12 @@ body {
       padding: 1rem; }
     .header__menu--desplegable {
       list-style: none; }
-      .header__menu--desplegable-link {
-        color: #4480C7;
-        text-decoration: none;
-        font-size: 1.5rem; }
     .header__menu--elementos {
       opacity: 0;
       list-style: none;
       transition: all 0.2s;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      margin-top: 3rem; }
       .header__menu--elementos-elemento {
         font-size: 1.5rem;
         color: #fff;
