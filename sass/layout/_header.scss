@@ -42,4 +42,40 @@
         }
     
     }
+    &__menu{
+        float: right;
+        position: absolute;
+        text-align:center;
+        top: 4rem;
+        right: 4rem;
+        transition: all 0.2s;
+
+        &:hover &--elementos {
+            opacity: 1;
+            background-color: $color-primary;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        &--desplegable{
+            list-style: none;
+           &-link{
+               color: $color-primary;
+               text-decoration: none;
+               font-size: 1.5rem;
+           }
+           
+        }
+        &--elementos{
+            opacity: 0;
+            list-style: none;
+            transition: all 0.2s;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+            &-elemento{
+                font-size: 1.5rem;
+                color: $color-white;
+                text-decoration: none;              
+            }
+        }
+    }
 }

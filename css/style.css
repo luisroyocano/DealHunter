@@ -220,21 +220,6 @@ body {
     float: left;
     margin-right: 2.5rem; }
 
-.search-box {
-  width: 100rem;
-  height: 50px;
-  border-radius: 100px;
-  background-color: #4480C7;
-  border: none;
-  padding: 8px 16px;
-  color: white;
-  outline: 0;
-  font-size: 1.5rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
-  .search-box::placeholder {
-    color: white;
-    font-size: 1.5rem; }
-
 .categories {
   background-color: #4480C7;
   color: white;
@@ -457,6 +442,33 @@ body {
     .header__search-box::placeholder {
       color: white;
       font-size: 1.5rem; }
+  .header__menu {
+    float: right;
+    position: absolute;
+    text-align: center;
+    top: 4rem;
+    right: 4rem;
+    transition: all 0.2s; }
+    .header__menu:hover .header__menu--elementos {
+      opacity: 1;
+      background-color: #4480C7;
+      border-radius: 10px;
+      padding: 1rem; }
+    .header__menu--desplegable {
+      list-style: none; }
+      .header__menu--desplegable-link {
+        color: #4480C7;
+        text-decoration: none;
+        font-size: 1.5rem; }
+    .header__menu--elementos {
+      opacity: 0;
+      list-style: none;
+      transition: all 0.2s;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .header__menu--elementos-elemento {
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none; }
 
 .section-categories {
   padding-bottom: 6rem;
