@@ -254,7 +254,7 @@ body {
   animation-name: appear;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  text-align: center; }
+  box-sizing: border-box; }
   .usuario__shape {
     position: relative;
     width: 8rem;
@@ -269,6 +269,9 @@ body {
     font-size: 1.5rem; }
     .usuario__text-link {
       color: #4480C7; }
+    .usuario__text-link-chat {
+      color: #fff;
+      text-decoration: none; }
 
 .contenedor {
   background-color: #fff;
@@ -371,6 +374,39 @@ body {
         transform: scale(1.05);
         background-color: #55c57a;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
+
+.chat__msj-box {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 3rem;
+  background-color: #fff;
+  margin: 0 3rem;
+  text-align: center; }
+  .chat__msj-box--mymsj {
+    font-size: 1.6rem;
+    text-align-last: right;
+    margin-top: 30rem;
+    padding: 3rem; }
+  .chat__msj-box--hismsj {
+    font-size: 1.6rem;
+    border-top: 1px solid #4480C7;
+    text-align-last: left;
+    padding: 3rem; }
+
+.chat__writing-box {
+  background-color: #4480C7;
+  height: 8vh;
+  margin: 0 3rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center; }
+  .chat__writing-box--input {
+    border: none;
+    outline: 0;
+    padding: 1rem;
+    margin: 1.5rem;
+    width: 90%;
+    border-radius: 15px; }
 
 .row {
   max-width: 114rem;
@@ -508,3 +544,7 @@ body {
   background-color: #4480C7;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px; }
+
+.section-chat {
+  block-size: 85vh;
+  background-color: #f7f7f7; }

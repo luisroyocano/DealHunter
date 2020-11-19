@@ -1,0 +1,42 @@
+.chat{
+    
+    &__msj-box{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        padding: 3rem;
+        background-color: $color-white;
+        margin: 0 3rem;
+        
+        text-align:center;
+
+        &--mymsj{
+            font-size: $default-font-size;
+            text-align-last: right;
+            margin-top: 30rem;
+            padding: 3rem;
+        }
+        &--hismsj{
+            font-size: $default-font-size;
+            border-top: 1px solid $color-primary;
+            text-align-last: left;
+            
+            padding: 3rem;
+        }
+    }
+    &__writing-box{
+        background-color: $color-primary;
+        height: 8vh;
+        margin: 0 3rem;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        &--input{
+            border: none;
+            outline:0; 
+            padding: 1rem;
+            margin: 1.5rem;
+            width: 90%;
+            border-radius: 15px;
+        }
+    }
+}

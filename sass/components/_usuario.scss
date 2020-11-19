@@ -2,7 +2,8 @@
     animation-name: appear;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    text-align: center;
+    box-sizing: border-box;
+    //text-align: center;
     
     &__shape {
         position: relative;
@@ -18,12 +19,16 @@
         transform: translateX(-2rem);;
     }
     &__text{
-        
         font-size: 1.5rem;
        &-link{
            color: $color-primary;
        }
+       &-link-chat{
+           color: $color-white;
+           text-decoration: none;
+       }
     }
+    
 }
 
     
